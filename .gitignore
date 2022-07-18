@@ -1,0 +1,7 @@
+*.bak
+*.mwb
+.vscode/
+.vs/
+
+vendor/*
+composer.phar

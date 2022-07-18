@@ -1,0 +1,163 @@
+{
+  "task" : "Recorrer Pueblo",
+  "Globals" : {
+    "PJLoaded" : {
+      "regex" : "/140028494;Venenoso;10;100\\^100;/"
+    }
+  },
+  "list" : [
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : null,
+        "sendDest" : "GA001fbVgay",
+        "posMov" : [[-3,0],[-3,-1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001hgTagUhe-",
+        "posMov" : [[-3,-1],[-2,-1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001heigb3hbBga-hauaax",
+        "posMov" : [[-2,-1],[-2,-2]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001genhcpacq",
+        "posMov" : [[-2,-2],[-1,-2]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001be2cgndgPchg",
+        "posMov" : [[-1,-2],[-1,-1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001bbGcc3becaee",
+        "posMov" : [[-1,-1],[0,-1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001behaenbe6ae-",
+        "posMov" : [[0,-1],[1,-1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001agAbhhahihg6bhj",
+        "posMov" : [[1,-1],[1,0]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001bbccdWdeAcgRbhj",
+        "posMov" : [[1,0],[1,1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001cbbdd3",
+        "posMov" : [[1,1],[0,1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001fdggcPfat",
+        "posMov" : [[0,1],[0,0]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001feYeeX",
+        "posMov" : [[0,0],[-1,0]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001dfOefNdgregmffqgeZfevgd4fdA",
+        "posMov" : [[-1,0],[-2,0]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001fcQecOddebdtceQdfgefffeyeexfdQedPfdA",
+        "posMov" : [[-2,0],[-3,0]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001dfwchk",
+        "posMov" : [[-3,0],[-3,1]]
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001bcoacq",
+        "posMov" : [[-3,1],[-2,1]]      
+      }
+    },
+    {
+      "path" : "GameActions.changeMapa", 
+      "params" : {
+        "trigger" : ["PJLoaded"],
+        "sendDest" : "GA001acYhbSabYbcq",
+        "posMov" : [[-2,1],[-1,1]]      
+      }
+    }
+  ],
+  "Commnents" : {
+    "Landfus" : {
+      "Globals" : {
+        "PJLoaded" : {
+          "_regex_Bueno" : "/^GM\\|\\+.*;Temblo\\^/",
+          "regex" : "/;Temblo\\^-1;10,;101\\^100;/"
+        }
+      }
+    },
+    "Original" : {
+      "Globals" : {
+        "PJLoaded" : {
+          "regex" : "/140028494;Venenoso;10;100\\^100;/"
+        }
+      }
+    }
+  }
+}
