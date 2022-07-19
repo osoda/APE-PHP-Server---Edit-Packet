@@ -7,12 +7,6 @@ class ActionsBase
   protected $dataActionNew = null;
   public $actionCompleted = false;
 
-
-  public function isNewActionToExectue()
-  {
-    return is_null($this->dataActionNew);
-  }
-
   public function sendAction()
   {
     $response = new Response($_GET['sockid']);

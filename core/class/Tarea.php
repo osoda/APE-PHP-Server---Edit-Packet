@@ -3,10 +3,11 @@ require_once 'core/base/Response.php';
 
 class Tarea
 {
-  private $dataTask;
-  private $objAction;
+  protected $dataTask;
+  protected $objAction;
   public $dataSend;
   public $status;
+  protected $sessionList;
 
   const STATUS_START = 1;
   const STATUS_PROGRESS = 2;
@@ -14,12 +15,20 @@ class Tarea
 
   public function __construct($dataTask)
   {
+    $this->defineVarSession();
     $this->dataTask = $dataTask;
     $this->status == Tarea::STATUS_START;
-    $this->next();
   }
 
+  protected function defineVarSession()
+  {
+    $this->dataTask = &$_SESSION['TAREA']['list'];
+  }
 
+  public function exec()
+  {
+    $this->next();
+  }
 
   private function next()
   {
@@ -70,7 +79,6 @@ class Tarea
   private function taskCompleted()
   {
     array_shift($this->dataTask);
-    array_shift($_SESSION["TAREA"]["list"]);
     $this->status == Tarea::STATUS_END;
 
     if (empty($this->dataTask))

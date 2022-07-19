@@ -8,9 +8,9 @@ class Controller
   public function __construct()
   {
     try {
-      if (self::session_start()) {
+      if (self::session_start())
         $_SESSION["TAREA"] = json_decode(file_get_contents('tasks.json'), 1);
-      }
+
       $dataTask = $_SESSION["TAREA"]["list"];
       // error_log('*E: Controller[16]: ' . print_r(json_encode($_SESSION), 1));
       //Tareas finalizadas
@@ -24,7 +24,8 @@ class Controller
       $_SESSION['TAREA']['data'] = $data;
 
 
-      $objTask = new Tarea($dataTask, $data);
+      $objTask = new Tarea($dataTask);
+      $objTask->exec();
       $this->sendDataAPE(new Packet($objTask->dataSend));
       $objTask->end();
     } catch (Exception $e) {
@@ -51,6 +52,7 @@ class Controller
     if (empty($_SESSION['TAREA'])) {
       $isNew = true;
       $_SESSION['TAREA'] = [];
+      $_SESSION['TAREA_ONLINE'] = [];
     } else
       $isNew = false;
 
